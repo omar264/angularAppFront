@@ -4,6 +4,13 @@ import { Routes, RouterModule } from '@angular/router'
 import { AuthenticationComponent } from './authentication/authentication.component';
 import { HomeComponent } from './home/home.component';
 
+
+const routes: Routes = [
+    { path: "", redirectTo: "/home", pathMatch: "full" },
+    { path: "home", component: HomeComponent },
+    { path: "authentification", component: AuthenticationComponent },
+    { path: "*", component: HomeComponent },
+];
 export const appRouteList: Routes = [
   {
     path: 'login',

@@ -5,11 +5,17 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './authentication.component.html',
   styleUrls: ['./authentication.component.css']
 })
-export class AuthenticationComponent implements OnInit {
 
+export class AuthenticationComponent implements OnInit {
+username:string;
+password:string;
   constructor() { }
 
-  ngOnInit(): void {
-  }
-
+  ngOnInit(): void { }
+LoginUser(){
+if (this.username== "AdminMad" && this.password== "Admin12")
+{
+console.log("Welcome")
+}
+}
 }
